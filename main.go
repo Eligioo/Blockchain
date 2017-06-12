@@ -44,7 +44,6 @@ func (c Chain) LastBlock() *Block {
 func generateBlock(chain *Chain) {
 	if len(chain.Blocks) == 0 {
 		Genesis := Block{}
-		fmt.Println(Genesis)
 		Genesis.Header.CreatedAt = time.Now()
 		Genesis.Header.BlockNumber = 0
 		for index := 0; index < 64; index++ {
